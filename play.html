@@ -13,84 +13,44 @@
             crossorigin="anonymous"
         />
     </head>
-    <body>
-        <header>
-            <h1>Simon<sup>&reg;</sup></h1>
-            <nav>
-                <menu>
-                    <li><a href = 'index.html'>Home</a></li>
-                    <li><a href = 'play.html'>Play</a></li>
-                    <li><a href = 'scores.html'>Scores</a></li>
-                    <li><a href = 'about.html'>About</a></li>
+    <body class = "bg-dark text-light">
+        <header class = "container-fluid">
+            <nav class = "navbar fixed-top navbar-dark">
+                <a class = "navbar-brand" href = "#">Simon<sup>&reg;</sup></a>
+                <menu class = "navbar-nav">
+                    <li class = "nav-item"><a class = "nav-link" href = "index.html">Home</a></li>
+                    <li class = "nav-item"><a class = "nav-link active" href = 'play.html'>Play</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = 'scores.html'>Scores</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = 'about.html'>About</a></li>
                 </menu>
             </nav>
-            <hr />
         </header>
 
-        <main>
-            <div class = 'players'>
-                Player:
-                <span class = 'player-name'>Mystery Player</span>
+        <main class="bg-secondary">
+            <div class="players">
+              Player:
+              <span class="player-name">Mystery player</span>
             </div>
-
-            <br />
-
-            <div>
-                <label for = 'count'>Score</label>
-                <input type = 'text' id = 'count' value = '--' readonly />
-            </div>
-
-            <br />
-
-            <div>
-                <button>Reset</button>
-            </div>
-
-            <br />
-
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <button>
-                                <svg aria-hidden = 'true' viewBox = '0 0 100 100' height = '100' width = '100'>
-                                    <path d = 'M 95,5 95,95 5,95 Q 5,5 95,5' fill = 'LightCyan' />
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg aria-hidden = 'true' viewBox = '0 0 100 100' height = '100' width = '100'>
-                                    <path d = 'M5,5 5,95 95,95 Q 95,5 5,5' fill = 'Lavender' />
-                                </svg>
-                            </button>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <button>
-                                <svg aria-hidden = 'true' viewBox = '0 0 100 100' height = '100' width = '100'>
-                                    <path d = 'M5,5 95,5 95,95 Q 5,95 5,5' fill = 'LavenderBlush' />
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg aria-hidden = 'true' viewBox = '0 0 100 100' height = '100' width = '100'>
-                                <path d = 'M95,5 5,5 5,95 Q 95,95 95,5' fill = 'SeaShell' />
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
+            <div class="game">
+              <div class="button-container">
+                <button class="button-top-left"></button>
+                <button class="button-top-right"></button>
+                <button class="button-bottom-left"></button>
+                <button class="button-bottom-right"></button>
+                <div class="controls center">
+                  <div class="game-name">Simon<sup>&reg;</sup></div>
+                  <div class="score center">--</div>
+                  <button class="btn btn-light">Reset</button>
+                </div>
+              </div>
             </div>
         </main>
 
-        <footer>
-            <hr />
+        <footer class = "bg-dark text-dark text-muted">
+            <div class="container-fluid">
             <span class = 'text-reset'>McCall Angerhofer</span>
-            <br />
             <a href = 'https://github.com/mangerhofer/simon.git'>GitHub</a>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
